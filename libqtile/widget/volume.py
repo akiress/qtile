@@ -5,7 +5,7 @@ import subprocess
 import cairo
 
 import base
-from .. import bar
+from libqtile import bar
 
 __all__ = [
     'Volume',
@@ -103,7 +103,7 @@ class Volume(base._TextBox):
             if self.volume == -1:
                 self.text = 'M'
             else:
-                self.text = '%s%%' % self.volume
+                self.text = 'Vol: %s%%' % self.volume
 
     def setup_images(self):
         for img_name in (

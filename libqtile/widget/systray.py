@@ -1,4 +1,4 @@
-from .. import bar, xcbq, window
+from libqtile import bar, xcbq, window
 import base
 
 import xcb

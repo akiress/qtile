@@ -1,7 +1,7 @@
 import glob
 import os
 import string
-from .. import bar, xkeysyms, xcbq, command
+from libqtile import bar, xkeysyms, xcbq, command
 import base
 
 

@@ -2,7 +2,7 @@ import os
 import cairo
 
 import base
-from .. import bar
+from libqtile import bar
 
 class Image(base._Widget, base.MarginMixin):
 

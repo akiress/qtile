@@ -1,4 +1,4 @@
-from .. import hook, bar, group, layout
+from libqtile import hook, bar, group, layout
 import base
 import logging
 

@@ -1,5 +1,5 @@
 import base
-from .. import bar, hook
+from libqtile import bar, hook
 
 
 class CurrentLayout(base._TextBox):

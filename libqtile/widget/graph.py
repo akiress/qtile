@@ -1,6 +1,6 @@
 import cairo
 
-from . import base
+import base
 from os import statvfs
 import time
 

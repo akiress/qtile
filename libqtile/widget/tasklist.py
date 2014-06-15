@@ -1,5 +1,5 @@
 import cairo
-from .. import bar, hook
+from libqtile import bar, hook
 import base
 
 

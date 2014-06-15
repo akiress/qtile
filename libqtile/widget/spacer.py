@@ -1,4 +1,4 @@
-from .. import bar
+from libqtile import bar
 import base
 
 

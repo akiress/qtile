@@ -1,4 +1,4 @@
-from .. import command, bar, configurable, drawer
+from libqtile import command, bar, configurable, drawer
 import gobject
 import logging
 import threading
