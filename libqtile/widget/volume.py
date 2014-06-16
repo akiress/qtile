@@ -26,7 +26,7 @@ class Volume(base._TextBox):
         ("update_interval", 0.2, "Update time in seconds."),
     ]
 
-    def __init__(self, **config):
+    def __init__(self, text="", **config):
         base._TextBox.__init__(self, '0', width=bar.CALCULATED, **config)
         self.add_defaults(Volume.defaults)
         if self.theme_path:
@@ -35,6 +35,7 @@ class Volume(base._TextBox):
         self.surfaces = {}
         self.volume = None
         self.timeout_add(self.update_interval, self.update)
+        self.add_text = text
 
     def _configure(self, qtile, bar):
         base._TextBox._configure(self, qtile, bar)
@@ -103,7 +104,7 @@ class Volume(base._TextBox):
             if self.volume == -1:
                 self.text = 'M'
             else:
-                self.text = 'Vol: %s%%' % self.volume
+                self.text = '{0}{1}'.format(self.add_text, self.volume)
 
     def setup_images(self):
         for img_name in (
